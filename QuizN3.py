@@ -63,7 +63,7 @@ for i, j in zip(currencyKeys, currencyValues):
 
 #Inserting info in SQL DB Table
 
-# cursor.executemany(f''' INSERT INTO currency (currency, price) VALUES (?, ?)''', currencyLists)
+# cursor.executemany(''' INSERT INTO currency (currency, price) VALUES (?, ?)''', currencyLists)
 
 conn.commit()
 conn.close()
